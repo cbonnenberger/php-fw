@@ -22,17 +22,8 @@ class Event
 
 
 
-    /**
- * Event constructor.
- * @param $title
- * @param $description
- * @param $room
- * @param $hour
- * @param $day
- * @param $nbParticipant
- */
 
-    public function __construct(string $title, string $description, string $room, DateOfEvent $startDate, DateOfEvent $endDate, int $nbParticipant, string $address, string $eventType)
+    public function __construct(string $title, string $description, Room $room, DateOfEvent $startDate, DateOfEvent $endDate, int $nbParticipant, string $address, string $eventType)
     {
         $this->title = $title;
         $this->description = $description;
@@ -63,7 +54,7 @@ class Event
     /**
      * @return mixed
      */
-    public function getRoom() : string
+    public function getRoom() : Room
     {
         return $this->room;
     }
