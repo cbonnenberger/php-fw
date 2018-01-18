@@ -9,7 +9,7 @@
 namespace Metinet\Domain;
 
 
-class login
+class Account
 {
     private $identifiant;
     private $password;
